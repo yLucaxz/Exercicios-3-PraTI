@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício HTML Semântico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Bem-vindo ao Meu Site</h1>
+    <p>Este site apresenta informações sobre minha missão e visão.</p>
+  </header>
+
+  <main>
+    <section class="missao">
+      <h2>Missão</h2>
+      <p class="destaque">Nossa missão é oferecer soluções criativas e eficientes para todos os clientes.</p>
+    </section>
+
+    <section class="visao">
+      <h2>Visão</h2>
+      <p id="importante">Nossa visão é ser referência no mercado nacional e internacional até 2030.</p>
+    </section>
+
+    <!-- Galeria de imagens (Grid + Flexbox) -->
+    <section class="galeria-container">
+      <div class="galeria">
+        <figure>
+          <img src="img1.jpg" alt="Imagem 1">
+          <figcaption>Legenda 1</figcaption>
+        </figure>
+        <figure>
+          <img src="img2.jpg" alt="Imagem 2">
+          <figcaption>Legenda 2</figcaption>
+        </figure>
+        <figure>
+          <img src="img3.jpg" alt="Imagem 3">
+          <figcaption>Legenda 3</figcaption>
+        </figure>
+        <figure>
+          <img src="img4.jpg" alt="Imagem 4">
+          <figcaption>Legenda 4</figcaption>
+        </figure>
+        <figure>
+          <img src="img5.jpg" alt="Imagem 5">
+          <figcaption>Legenda 5</figcaption>
+        </figure>
+        <figure>
+          <img src="img6.jpg" alt="Imagem 6">
+          <figcaption>Legenda 6</figcaption>
+        </figure>
+        <figure>
+          <img src="img7.jpg" alt="Imagem 7">
+          <figcaption>Legenda 7</figcaption>
+        </figure>
+        <figure>
+          <img src="img8.jpg" alt="Imagem 8">
+          <figcaption>Legenda 8</figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Menu Hamburger -->
+  <nav class="nav-principal">
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+    <button class="hamburger">&#9776;</button>
+  </nav>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const nav = document.querySelector(".nav-principal ul");
+
+    hamburger.addEventListener("click", () => {
+      nav.classList.toggle("ativo");
+    });
+  </script>
+
+</body>
+</html>
